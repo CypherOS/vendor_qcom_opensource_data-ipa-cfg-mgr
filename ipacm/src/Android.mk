@@ -1,3 +1,4 @@
+ifeq ($(call my-dir),$(call project-path-for,qcom-data-ipa-cfg-mgr-ipacm-src))
 BOARD_PLATFORM_LIST := msm8909
 BOARD_PLATFORM_LIST += msm8916
 BOARD_PLATFORM_LIST += msm8917
@@ -109,4 +110,6 @@ include $(BUILD_PREBUILT)
 
 endif # $(TARGET_ARCH)
 endif
+endif
+
 endif
